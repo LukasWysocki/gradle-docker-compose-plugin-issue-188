@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  sleep:
+    container_name: sleep
+    image: busybox
+    restart: "no"
+    command: sleep 42
+

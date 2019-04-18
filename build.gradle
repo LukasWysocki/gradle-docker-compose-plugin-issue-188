@@ -1,0 +1,9 @@
+plugins {
+    id 'com.avast.gradle.docker-compose' version "0.9.2"
+}
+
+dockerCompose {
+    captureContainersOutputToFile = "${project.buildDir}/tmp/dockerCompose/containers.log"
+    composeLogToFile = "${project.buildDir}/tmp/dockerCompose/compose.log"
+}
+
